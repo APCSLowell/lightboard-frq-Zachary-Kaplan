@@ -30,7 +30,7 @@ public class LightBoard
     int sum = 0;
     for(int i = 0; i < lights[0].length; i++)
    {
-      if(lights[i][c])
+      if(lights[i][col])
       {
          sum++;
       }
