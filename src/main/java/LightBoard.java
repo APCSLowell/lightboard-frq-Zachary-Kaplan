@@ -11,7 +11,7 @@ public class LightBoard
   public LightBoard(int numRows, int numCols)
   {
     /* to be implemented in part (a) */
-    lights = new boolean[numRows][numCols]
+    lights = new boolean[numRows][numCols];
     for(int r=0; r< numRows; r++)
     {
       for(int c = 0; c < numCols; i++)
@@ -38,7 +38,7 @@ public class LightBoard
     /* to be implemented in part (b) */ 
     if(lights[row][col])
     {
-      return !(sum%2 == 0)
+      return !(sum%2 == 0);
     } else
     {
       return sum%3 == 0;
