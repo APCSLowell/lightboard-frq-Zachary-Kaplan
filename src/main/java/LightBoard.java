@@ -28,7 +28,7 @@ public class LightBoard
   public boolean evaluateLight(int row, int col)
   {
     int sum = 0;
-    for(int i = 0; i < lights[0].length; i++)
+    for(int i = 0; i < lights.length; i++)
    {
       if(lights[i][col])
       {
@@ -38,10 +38,10 @@ public class LightBoard
     /* to be implemented in part (b) */ 
     if(lights[row][col])
     {
-      return !(sum%2 == 0);
+      return sum%2 == 1;
     } else
     {
-      return sum%3 == 0;
+      return sum % 3 == 0;
     }
   }
   public boolean[][] getLights()
